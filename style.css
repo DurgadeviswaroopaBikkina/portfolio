@@ -1,0 +1,52 @@
+*{
+    margin: 2px;
+    padding:0;
+    box-sizing: border-box;
+}
+.div{
+    text-align: center;
+    color: darkorange;
+    font-size: 25px; 
+}
+.div2 li{
+    display:inline;
+    color: red;
+    text-decoration: none;
+    background-color: #d7cbcb;
+    font-size: 20px;
+    text-align: center;
+}
+img{
+    display: block;
+    margin: 0 auto;
+    height: 200px;
+    width: 200px;
+    border-radius: 20px;
+}
+h2{
+    color: darkmagenta;
+}
+h1{
+    color: lightsalmon;
+
+}
+h4{
+    color: chocolate;
+}
+.button a{
+    display: block;
+    font-size: 15px;
+    color: black;
+}
+p{
+    color: chocolate;
+}
+h5{
+    color: cornflowerblue
+}
+h3{
+    color: magenta;
+}
+.div4 p{
+    text-align: center;
+}
