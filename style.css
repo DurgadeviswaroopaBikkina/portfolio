@@ -3,15 +3,14 @@
     padding: 0;
     box-sizing: border-box;
 }
-li{
-    list-style: none;
-    font-size: 18px;
-    font-weight: 600;
+.div{
+    text-align: center;
+    color: darkorange;
+    font-size: 25px; 
 }
-h1{
-    color: chocolate;
-}
-a{
+.div2 li{
+    display:inline;
+    color: red;
     text-decoration: none;
 }
 .flex{
