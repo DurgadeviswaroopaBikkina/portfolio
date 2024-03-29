@@ -1,52 +1,63 @@
 *{
-    margin: 2px;
-    padding:0;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
-.div{
-    text-align: center;
-    color: darkorange;
-    font-size: 25px; 
-}
-.div2 li{
-    display:inline;
-    color: red;
-    text-decoration: none;
-    background-color: #d7cbcb;
-    font-size: 20px;
-    text-align: center;
-}
-img{
-    display: block;
-    margin: 0 auto;
-    height: 200px;
-    width: 200px;
-    border-radius: 20px;
-}
-h2{
-    color: darkmagenta;
+li{
+    list-style: none;
+    font-size: 18px;
+    font-weight: 600;
 }
 h1{
-    color: lightsalmon;
+    color: chocolate;
+}
+a{
+    text-decoration: none;
+}
+.flex{
+    display: flex; 
+     align-items: center;
+}
 
+.navigation{
+    justify-content: space-between;
 }
-h4{
-    color: chocolate;
+.nav-links{
+    gap: 20px;
 }
-.button a{
+.ham span{
     display: block;
+    width: 30px;
+    height: 4px;
+    background-color: #000;
+    margin: 3px 0px;
+    border-radius: 5px;
+}
+.ham{
+    display: block;
+}
+.nav-button button{
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
     font-size: 15px;
-    color: black;
+    font-weight: 600;
+    margin-left: 20px;
 }
-p{
-    color: chocolate;
-}
-h5{
-    color: cornflowerblue
-}
-h3{
-    color: magenta;
-}
-.div4 p{
+.img img{
+    border-radius: 40%;
+    justify-content: center;
+    column-gap: 30px;
+}   
+.buttons button{
     text-align: center;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    font-size: 30px;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    margin-left: 400px;
+    margin-right: 400px;
 }
