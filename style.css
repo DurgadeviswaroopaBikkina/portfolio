@@ -1,91 +1,320 @@
+
 *{
-    margin:1px;
-    padding:2px;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
-/* nav section */
-.div{
-    text-align: center;
-    color: darkorange;
-    font-size: 25px; 
+:root{
+    --transition- : all 0.5s ease-in-out;
+    --main-color- : #00d7bb;
+    --box-shadow- : 0px 0px 2px 0px;
 }
 li{
     list-style: none;
-    font-size: 18px;
-    font-weight: 800;
+    font-size: 16px;
+    font-weight: 600;
 }
 a{
-    text-decoration: none;
+    text-decoration: none !important;
 }
-li a:hover{
-    color:  #940a0a;
-    font-size: 20px;
+ul{
+    margin-bottom: 0px !important;
+}
+p{
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    color: #8e9297;
+    letter-spacing: 1px;
+    text-align: justify;
 }
 .flex{
-    display: flex; 
-     align-items: center;
-     gap: 30px;
+    display: flex;
+    align-items: center;
 }
+body{
+    font-family: 'Times New Roman', Times, serif!important;
+}
+.heading{
+    background: -webkit-linear-gradient(left, #00f298, #07f7f7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.gap20{
+    gap: 20px;
+}
+/* 
+1. Navigation.
+2. Home section.
+3. Education section.
+4.Acheivement section
+5. Forms section.
+6. Back to top section.
+7. Preloader section.
+*/
 
+/* 1. Navigation section starts. */
+
+.nav-main{
+    background-color: var(--main-color-);
+    position: sticky;
+    top: 0;
+    z-index: +99;
+}
 .navigation{
     justify-content: space-between;
 }
 .ham span{
     display: block;
-    width: 30px;
-    height: 4px;
-    background-color: #000;
-    margin: 3px 0px;
+    margin: 5px 0px;
+    width: 40px;
     border-radius: 5px;
+    background-color: #000;
+    height: 4px;
 }
 .ham{
     display: none;
 }
+.nav-links{
+    gap: 30px;
+}
+.nav-links li a{
+    color: #fff;
+    transition: var(--transition-);
+}
+.nav-links li{
+    position: relative;
+}
+.nav-links li::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #000;
+    left: 0;
+    bottom: -5px;
+    transform: scale(0);
+    transition: var(--transition-);
+}
+.nav-links li:hover::after{
+    transform: scale(1);
+    transition: var(--transition-);
+}
+.nav-links li a:hover{
+    color: #000;
+    transition: var(--transition-);
+}
+.nav-button{
+    position: relative;
+}
 .nav-button button{
-    padding: 10px 20px;
-    border-radius: 5px;
-    border: none;
-    font-size: 15px;
-    font-weight: 600;
     margin-left: 20px;
-    background-color: rgb(210, 108, 30);
-}
-.img img{
-    border-radius: 50%;
-} 
-/* button section   */
-.buttons button{
-    text-align: center;
     padding: 10px 20px;
-    border-radius: 5px;
-    border: none;
-    font-size: 10px;
+    border-radius: 10px;
+    color: #000;
+    background-color: transparent;
+    font-size: 14px;
     font-weight: 600;
-    display: flex;
-    margin-left: 400px;
-    background-color: orange;
-    color: white;
+    border: 2px solid #fff;
+    transition: var(--transition-);
 }
-/* about section */
-h1{
-    color: brown;
-    text-shadow: 1px 1px 2px violet;
+.nav-button button:hover{
+    background-color: #fff;
+    transition: var(--transition-);
 }
-.about h2,p{
-    font-size: 20px;
+.nav-button:hover a, .nav-button:hover i{
+    color: var(--main-color-);
 }
-.div img{
+.nav-button i{
+    position: absolute;
+    animation: moving 3s linear infinite;
+    color: #fff;
+}
+.nav-button a{
+    color: #fff;
+}
+@keyframes moving {
+    0%{
+        top: 0px;
+    }
+    50%{
+        top: 20px;
+    }
+    100%{
+        top: 0px;
+    }
+}
+ /* 1. Navigation section ends. */
+
+/* 2. Home section starts. */
+.home-main{
+    background-color: #313741;
+}
+.home-main h1, .home-main h6{
+    color: #fff;
+}
+.home-button button{
+    background-color: var(--main-color-);
+    color: #fff;
+    margin-left: 0px;
+    box-shadow: var(--box-shadow-) var(--main-color-);
+}
+.home-buttons{
+    gap: 20px;
+}
+.home-links i{
+    font-size: 16px;
+    box-shadow: var(--box-shadow-);
     border-radius: 50%;
-    align-items: center;
-} 
-.color h2{
-    color: rgb(239, 139, 18);
+    padding: 10px;
+    cursor: pointer;
+    background-color: var(--main-color-);
+    color: #fff;
 }
-.color h4,h5{
-    color: rgb(100, 22, 196);
+.home-links i:hover{
+    animation: rotate 2s linear infinite;
 }
-/* achieve section */
-.achieve img{
+@keyframes rotate {
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(360deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+.home-image img{
+border-radius: 50%;
+}
+/* 2. Home section ends. */
+/* 3. Education section starts. */
+.edu-main{
+    background-color: #313741;
+}
+.education-content{
+    position: relative;
+}
+.education-content::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 47%;
+    height: 93%;
+    width: 4px;
+    background: #d7e4ed;
+}
+.education-content::after{
+    border: 2px solid var(--main-color-);
     border-radius: 50%;
-    align-items: center;
+    color: var(--main-color-);
+    content: "\f19d";
+    font-family: fontawesome;
+    font-size: 25px;
+    height: 70px;
+    left: 47%;
+    line-height: 65px;
+    position: absolute;
+    text-align: center;
+    top: -45px;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    width: 70px;
 }
+.education-content p{
+    width: 90%;
+}
+.edu-con{
+    position: relative;
+}
+.edu-con span{
+    border-radius: 50%;
+    background: var(--main-color-);
+    display: block;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 30%;
+    left: 92%;
+}
+/* 3. Education section ends. */
+/* 4.Achievement section starts. */
+.ach-main{
+    background-color: #313741;
+}
+.achieve-content{
+    position: relative;
+}
+.achieve-content::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 47%;
+    height: 94%;
+    width: 5px;
+    background: #d7e4ed;
+}
+.achieve-content::after{
+    border: 2px solid var(--main-color-);
+    border-radius: 50%;
+    color: var(--main-color-);
+    content: "\f19d";
+    font-family: fontawesome;
+    font-size: 25px;
+    height: 70px;
+    left: 47%;
+    line-height: 55px;
+    position: absolute;
+    text-align: center;
+    top: -45px;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    width: 70px;
+}
+.ach-con{
+    position: relative;
+}
+.ach-con span{
+    border-radius: 50%;
+    background: var(--main-color-);
+    display: block;
+    width: 30px;
+    height: 50px;
+    position: absolute;
+    top: 50%;
+    left: 92%;
+}
+
+/* 5. Contact section section starts. */
+.form-inputs input , .form-inputs textarea{
+    outline: none;
+    padding-left: 20px;
+    background-color: transparent;
+    border: none;
+    margin: 10px 0px;
+    width: 80%;
+    height: 40px;
+    border-bottom: 2px solid var(--main-color-);
+    color: #8e9297;
+}
+.form-inputs textarea{
+    height: 100px;
+    width: 100%;
+    margin-top: 20px;
+}
+.form-btn button{
+    color: var(--main-color-);
+    display: block;
+    margin: 0 auto;
+}
+.contact-address i{
+    border: 2px solid #fff;
+    padding: 15px;
+    border-radius: 5px;
+    margin: 10px 0px;
+}
+.contact-address a{
+    color: #fff;
+}
+/* 5. Contact section section ends. */

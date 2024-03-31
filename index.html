@@ -4,15 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PORTFOLIO</title>
+    <!-- fontawesome cdn -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- style.css -->
    <link rel="stylesheet" href="style.css">
+   <!-- responsive css -->
+   <link rel="stylesheet" href="responsive.css">
+   <!-- Bootstrap css cdn -->
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+   <!-- Kanit font family cdn -->
+   <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
     <!--nav section starts-->
-    <nav class="nav-main">
-        <section class="navigation flex">
+    <nav class=" py-2 nav-main">
+        <section class="container navigation flex">
             <div>
-                <h1>Bikkina Durga Devi Swaroopa</h1>
+                <h4>Bikkina Durga Devi Swaroopa</h4>
             </div>
             <div class="flex">
                 <ul class="flex nav-links">
@@ -22,7 +30,7 @@
                     <li><a href="">Achievements</a></li>
                     <li><a href="">Contact</a></li>
                 </ul>
-                <div class="nav-button">
+                <div class="nav-button hide-btn">
                     <button><a href="/swaroopa basic format resume (2) (4).pdf" download>Download my resume</a></button>
                 </div>
             </div>
@@ -34,120 +42,187 @@
         </section>
     </nav>
     <!--nav section ends-->
-    <!--intro section starts-->
-    <section class="flex intro">
-        <div class="flex img">
-            <img src="/swaru photo.jpg" alt="passport photo" width="200"
-            height="200">
-        </div>
-        <div>
-            <h3>Welcome to my profile </h2>
-            <h2>Hello,My name is "Bikkina Durga devi swaroopa"</h2>
-            <p>I'm currently doing A FULL STACK DEVELOPER internship at Powered IT solutions private limited.</p>
-            </div>  
-        </section>
-            <!--nav section ends here-->
-        <!--button section--> 
-        <section class="flex buttons">
-       <div>
-            <button><a href="/swaroopa basic format resume (2).pdf"Download><i class="fa-solid fa-download"></i>Download resume</a></button><br>
-            <button><a href="tel:+91 7032063020"><i class="fa-solid fa-phone"></i>Contact me</a></button>
-            </div>
-       </section> 
-    <!--button section ends-->
-    <!--about section starts-->
-    <section>
-        <h1 class="flex">ABOUT ME</h1>
-<div class="flex about">
-<p>I'm self motivated,quick learner and having positive attitude towards my career and my life and I'm also a proactive problem-solver. When faced with obstacles or challenges, I approach them with a positive attitude and a willingness to find solutions. I'm not afraid to ask questions, seek guidance when needed, and explore innovative approaches to overcome hurdles.</p>
-<p><span>My Skills:C,SQL,HTML</span></p>
-<div class="flex div"><img src="/passport.jpg" alt="photo" width="300" height="300"></div>
-</div>
-    </section>
-    <!--abou secion ends-->
-    <!--resume section starts-->
-    <section>
-        <h1>EDUCATION</h1>
-        <div class="flex color">
-            <div class="color">
-                <h2>Full stack developer Internship</h2>
-                <h4>Powered IT solutions</h4>
-                <div>
-                    <h5> 3 months</h5>
+     <!-- Home section starts -->
+     <section class="py-5 home-main" id="home">
+        <div class="container">
+           <div class="row">
+            <div class="col-lg-6 home-content">
+                <h6>I'm glad you're here.</h6>
+                <h1>Hello i’m <span id="element" class="heading"></span> <br> A WEB Developer</h1>
+                <p>Hello! My name is Durga Devi Swaroopa,I am a Bsc student,and I'm a passionate front-end developer with a deep love for creating engaging and user-friendly web experiences. I specialize in bringing design concepts to life by writing clean, efficient, and responsive code. Web development is an ever-evolving field, and I thrive on staying at the forefront of emerging technologies and best practices. I'm enthusiastic about continuously expanding my knowledge and skillset to deliver the best possible results for each project.</p>
+                <p><span class="heading">MY SKILLS :- </span> C,SQL,HTML5,CSS,JAVASCRIPT</p>
+                <div class="flex home-buttons">
+                    <div  class="nav-button home-button">
+                        <button><a href="/swaroopa basic format resume (2) (4).pdf" download>DOWNLOAD MY RESUME &nbsp  <i class="fa-solid fa-angles-down"></i></a></button>
+                    </div>
+                    <div  class="nav-button home-button">
+                        <button><a href="tel: +91 7032068055">CONTACT ME</a></button>
+                    </div>
+                    <div class="home-links">
+                        <a href="https://github.com/DurgadeviswaroopaBikkina" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/bikkina-durga-devi-swaroopa-a784b0255?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
                 </div>
             </div>
-            <div>
-                <h2>Bachelor of science</h2>
-            <h4>Pragati womens degree college</h4>
-        <div>
-            <h5>2021-2024</h5>
+            <div class="col-lg-6 home-image">
+                <img src="/swaru photo.jpg" alt="Portfolio Image" width="400" height="400">
             </div>
-    </div>
-</div>
-<div  class="flex">
-    <div class="color">
-       <h2>Intermediate</h2>
-            <h4>Pragati vidyalaya junior college</h6>
+           </div>
+        </div>
+    </section>
+    <!-- home section ends -->
+   <!-- About me section starts. -->
+   <section id="about" class="py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 home-image">
+                <img src="/swaru photo.jpg" alt="Portfolio Image" width="400"height="400">
+            </div>
+            <div class="col-lg-6 about-content">
+                <h6>About Me</h6>
+                <h2 class="heading">I Am A Web Developer</h2>
+                <p>Hello! I’m Durga Devi Swaroopa</p>
+                <p>Web Developer I am a beginner developer looking for oppurtunities to expand my skills.I have knowledge of HTML5,CSS,and Javascript,and I am committed to improving my proficiency in these technologies.<br>If you are looking for a motivated and dedicated web developer,I am available for work oppurtunitiesand excited to contribute to projects that allow me to expand my experience and knowledge</p>
+                <p>Let's build something amazing together!</p>
                 <div>
-                    <h5>2019-2021</h5>
+                    <h4>MY INTERESTS</h4>
+                    <div class="home-links">
+                        <i class="fa-solid fa-music"></i>
+                        <i class="fa-solid fa-paintbrush"></i>
+                        <i class="fa-solid fa-plane"></i>
+                        <i class="fa-solid fa-book"></i>
                     </div>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="color">
-        <h2>SSC</h2>
-            <h4>ZP high school</h6>
-                <div>
-                    <h5>2018-2019</h5>
-                    </div>
-    </div>
-</div>
-        </section>
-        <!--resume section ends-->
+</section>
+<!-- about me section ends -->
+    <!--resume section starts-->
+      <!-- Education section starts -->
+      <section class="edu-main" id="edu">
+        <div class="container education-section">
+            <h2 class="text-center py-5 heading">EDUCATION</h2>
+            <div class="row education-content gx-5">
+               <div class="col-lg-6 py-5 edu-con"> 
+                <h4 class="heading">WEB DEVELOPMENT INTERNSHIP</h4>
+                <p>POWERED IT SOFTWARE SOLUTIONS PVT LTD.</p>
+                <p>2 MONTH'S</p>
+                <span></span>
+               </div>
+               <div class="col-lg-6 py-5">
+                <p>I'm currently doing full stack development internship at powered IT solutions private limited.</p>
+               </div>
+               <div class="col-lg-6 py-5 edu-con">
+                <p>I completed my under graduation in the stream of MATHS,PHYSICS,COMPUTER SCIENCE with 97% of CGPA </p>
+                <span></span>
+               </div>
+               <div class="col-lg-6 py-5">
+                <h4 class="heading">BACHELOR OF COMPUTER SCIENCE</h4>
+                <p>PRAGATI WOMEN'S DEGREE COLLEGE.</p>
+                <p>2021 - 2024</p>
+                <P>PEDDAPURAM</P>
+               </div>
+               <div class="col-lg-6 py-5 edu-con">
+                <h4 class="heading">SECONDARY EDUCATION</h4>
+                <p>PRAGATI VIDYALAYA JUNIOR COLLEGE</p>
+                <p>2019 - 2021</p>
+                <p>PEDDAPURAM</p>
+                <span></span>
+               </div>
+               <div class="col-lg-6 py-5">
+                <p>I completed my intermediate in the stream of MATHS,PHYSICS,CHEMISTRY with 959 marks</p>
+               </div>
+               <div class="col-lg-6 py-5 edu-con">
+                <p>I completed my school standard with 9.0 points.</p>
+                <span></span>
+               </div>
+               <div class="col-lg-6 py-5">
+                <h4 class="heading">PRIMARY SCHOOL</h4>
+                <p>Z P High school</p>
+                <p>2019</p>
+                <p>KATTAMURU</p>
+               </div>
+            </div>   
+        </div>
+    </section>
+    <!-- Education section ends -->
         <!--Achievement section starts-->
-        <section>
-            <h2>ACHIEVEMENTS</h2>
-            <h3>Achievement in Intermediate Standard</h3>
-            <div class="flex achieve">
+        <section class="achieve-main" id="ach">
+            <div class="container achieve-section">
+                <h2 class="text-center py-5 heading">ACHIEVEMENTS</h2>
+                <div class="row achieve-content gx-5">
+                   <div class="col-lg-6 py-5"> 
+                    <h4 class="heading">Achievement in Degree 1st semester</h4>
                 <img src="/Achievement in intermediate.jpg" alt="Achievement photo" width="300" height="300">
-                <p>I achieved 2nd prize for intermediate marks(959).This achievement certificate is given in my degree 1st semester</p>
-            </div>
-           <h3>Achievement in Degree Standard</h3>
-            <div class="flex">
-                <p>I achieved 1st prize for scoring highest percentege in Degree 4th semester (97%).</p>
-                <img src="/Achievement in Degree.jpg" alt="Achievement photo"width="300" height="300">
-            </div>
-        </section>
+                <p>I got this achievement for scoring second highest marks in intermediate</p>
+                   </div>
+                    <div class="col-lg-6 py-5"> 
+                     <h4 class="heading">Achievement in Degree 4th semester</h4>
+                 <img src="/Achievement in Degree.jpg" alt="Achievement photo" width="300" height="300">
+                 <p>I got this achievement for scoring highest percentage(95%) in 3rd semester</p>
+                    </div>  
+      </section>
         <!--achievement section ends-->
         <!--Contact section starts-->
-        <section>
-            <h2>Contact</h2>
-<div>
-    <form action="" method="">
-    <input type="text"required placeholder="Enter your Name"><br>
-    <input type="text"required placeholder="Enter your Email"><br>
-    <input type="text"required placeholder="Enter your Phonenumber"><br>
-    <textarea name="Message" id="Message" cols="30" rows="10"placeholder="Message"></textarea>
-    <div>
-        <button type="Submit">Submit</button>
-    </div>
-</form>
-    </div>
-    <div>
-        <a href="https://maps.app.goo.gl/7USaRhDbGtWtkEw76"><i class="fa-solid fa-location-dot"></i>Address</a>
-    </div>
-    <div>
-        <a href="tel:+91 7032063020"><i class="fa-solid fa-phone"></i>Contact me</a>
-    </div>
-    <div>
-        <a href="Mailto: durgadevibikkina123@gmail.com"><i class="fa-solid fa-envelope"></i>Email</a>
-    </div>
+        <section class="py-5 edu-main" id="contact">
+            <div class="container">
+                <div class="text-center">
+                    <h6 class="heading">CONTACT ME</h6>
+                    <h2 class="heading">I WANT TO HEAR FROM YOU</h2>
+                </div>
+                <div class="row py-5">
+                    <div class="col-lg-8">
+                        <form action="" class="form-inputs">
+                            <div class="flex gap20 column">
+                                <input type="text" placeholder="NAME *" required>
+                                <input type="email" placeholder="EMAIL *" required>
+                            </div>
+                            <div class="flex gap20 column"> 
+                                <input type="text" placeholder="NUMBER *" required>
+                                <input type="text" placeholder="SUBJECT *" required>
+                            </div>
+                            <div>
+                                <textarea name="" id="" placeholder="MESSAGE *"></textarea>
+                            </div>
+                            <div class="nav-button form-btn">
+                                <button>SUBMIT</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="flex contact-address gap20">
+                            <a href="https://maps.app.goo.gl/7USaRhDbGtWtkEw76" target="_blank"><i class="fa-solid fa-location-dot"></i></a>
+                            <div>
+                                <h6 class="heading">ADDRESS</h6>
+                                <p><a href="https://maps.app.goo.gl/7USaRhDbGtWtkEw76" target="_blank">Kattamuru Village, Peddapuram Mandal, Kakinada District, Andhra Pradesh.</a></p>
+                            </div>
+                        </div>
+                        <div class="flex gap20 contact-address">
+                            <a href="tel: +91  7032068055"><i class="fa-solid fa-phone-volume"></i></a>
+                            <div>
+                                <h6 class="heading">CONTACT</h6>
+                                <p><a href="tel: +91 7032068055">+91 7032068055</a></p>
+                            </div>
+                        </div>
+                        <div class="flex gap20 contact-address">
+                            <a href="mailto: durgadevibikkina123@gmail.com" ><i class="fa-solid fa-envelope"></i></a>
+                            <div>
+                                <h6 class="heading">EMAIL</h6>
+                                <p><a href="mailto: durgadevibikkina123@gmail.com" target="_blank">durgadevibikkina123@gmail.com</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
-        <!--contact section ends-->
+    <!-- contact section ends -->
         <!--Footer section starts -->
         <footer>
-            <div class="div4">
-                <p>All copy rights &copy are reserved by Durga Devi Swaroopa Bikkina</p>
+            <div>
+                <p class="div4">All copy rights &copy are reserved by <b>Durga Devi Swaroopa Bikkina</b></p>
             </div>
         </footer>
-      <!--Footer section ends-->  
+      <!--Footer section ends--> 
 </body>
 </html>
