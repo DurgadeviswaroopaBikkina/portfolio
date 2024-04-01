@@ -1,0 +1,171 @@
+/* Laptop */
+@media(max-width: 1200px) {
+    .edu-con span {
+        left: 91%;
+    }
+}
+
+/* Tablet */
+@media(max-width: 1023px) {
+    .nav-links {
+        flex-direction: column;
+        position: fixed;
+        top: 10%;
+        left: 0px;
+        gap: 10px;
+        background: #00d7bb;
+        width: 100%;
+        padding: 20px;
+        align-items: flex-start;
+        transform: scale(0);
+        transition: all 0.5s ease-in-out;
+    }
+
+    .nav-links-active {
+        transform: scale(1);
+        transition: all 0.5s ease-in-out;
+    }
+
+    .ham {
+        display: block;
+        position: relative;
+        transition: all 0.5s ease-in-out;
+    }
+
+    .ham-active span:first-child {
+        position: absolute;
+        transform: rotate(145deg);
+        transition: all 0.5s ease-in-out;
+    }
+
+    .ham-active span:nth-child(2) {
+        transform: translateY(-50px);
+        transition: all 0.5s ease-in-out;
+    }
+
+    .ham-active span:last-child {
+        position: absolute;
+        transform: rotate(-145deg);
+        top: 0px;
+        transition: all 0.5s ease-in-out;
+    }
+
+    .hide-btn {
+        display: none;
+    }
+    .education-content::before {
+        left: 5%;
+        height: 100%;
+    }
+
+    .education-content::after {
+        left: 5%;
+    }
+    .edu-con span {
+        left: -4%;
+    }
+        
+
+    .education-content {
+        padding-left: 50px;
+    }
+}
+
+/* Mobile */
+@media(min-width: 320px) and (max-width: 425px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .ham span {
+        width: 30px;
+    }
+
+    .navigation h4 {
+        font-size: 17px;
+    }
+
+    .nav-links {
+        top: 8%;
+    }
+
+    .home-buttons {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .home-image img {
+        width: 100%;
+        height: 60vh;
+        padding: 20px 0px;
+    }
+
+    .education-content::before {
+        left: 13%;
+        height: 100%;
+    }
+
+    .education-content::after {
+        left: 13%;
+    }
+
+    .education-content {
+        padding-left: 50px;
+    }
+
+    .edu-con span {
+        left: -6%;
+    }
+
+    .column {
+        flex-direction: column;
+        align-items: self-start;
+    }
+
+    .column input {
+        width: 100%;
+    }
+
+    .form-btn {
+        margin-bottom: 30px;
+    }
+}
+
+@media(min-width: 321px) and (max-width: 375px){
+    .edu-con span {
+        left: -3%;
+    }
+}
+
+@media(min-width: 376px) and (max-width: 425px){
+    .edu-con span {
+        left: -2%;
+    }
+}
+
+@media(min-width: 426px) and (max-width: 575px) {
+    .education-content::before {
+        left: 13%;
+        height: 100%;
+    }
+
+    .education-content::after {
+        left: 13%;
+    }
+
+    .education-content {
+        padding-left: 85px;
+    }
+
+    .edu-con span {
+        left: -6%;
+    }
+    .column {
+        flex-direction: column;
+        align-items: self-start;
+    }
+    .form-inputs input{
+        width: 100%;
+    }
+
+}
