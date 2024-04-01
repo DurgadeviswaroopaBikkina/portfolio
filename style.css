@@ -163,9 +163,9 @@ body{
     gap: 20px;
 }
 .home-links i{
-    font-size: 16px;
+    font-size:  10px;
     box-shadow: var(--box-shadow-);
-    border-radius: 50%;
+    border-radius: 10%;
     padding: 10px;
     cursor: pointer;
     background-color: var(--main-color-);
@@ -240,7 +240,7 @@ border-radius: 50%;
 }
 /* 3. Education section ends. */
 /* 4.Achievement section starts. */
-.ach-main{
+/* .ach-main{
     background-color: #313741;
 }
 .achieve-content{
@@ -254,7 +254,7 @@ border-radius: 50%;
     height: 94%;
     width: 5px;
     background: #d7e4ed;
-}
+} 
 .achieve-content::after{
     border: 2px solid var(--main-color-);
     border-radius: 50%;
@@ -271,8 +271,8 @@ border-radius: 50%;
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
     width: 70px;
-}
-.ach-con{
+} */
+/* .ach-con{
     position: relative;
 }
 .ach-con span{
@@ -284,7 +284,7 @@ border-radius: 50%;
     position: absolute;
     top: 50%;
     left: 92%;
-}
+} */
 
 /* 5. Contact section section starts. */
 .form-inputs input , .form-inputs textarea{
@@ -318,3 +318,63 @@ border-radius: 50%;
     color: #fff;
 }
 /* 5. Contact section section ends. */
+/* 6. Back to top section starts. */
+.back-to-top{
+    bottom: 20px;
+    left: 20px;
+    z-index: +999;
+    padding: 10px 15px;
+    background-color: var(--main-color-);
+    border-radius: 50%;
+    transform: scale(0);
+    filter: drop-shadow(0px 5px 5px #000);
+    transition: var(--transition-);
+}
+.back-to-top a{
+    color: #fff;
+    font-size: 20px;
+}
+.back-to-top-active{
+    transform: scale(1);
+    transition: var(--transition-);
+}
+/* 6. Back to top section ends. */
+
+/* Preloader section starts. */
+/* .loader{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
+    z-index: +9999;
+}
+.loader-active{
+    display: none;
+}
+.loading{
+    width: 50px;
+    height: 50px;
+    border: 2px solid black;
+    border-radius: 50%;
+    border-top: 2px solid #fff;
+    display: block;
+    animation: circle 3s linear infinite;
+    margin-bottom: 30px; 
+}
+@keyframes circle {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.preloader{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+} */
+/* Preloader section ends. */
